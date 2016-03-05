@@ -1,0 +1,18 @@
+<suite name='205'>
+<test name="moga">
+
+<classes>
+
+<class name="com.bit.test.SmokeTest">
+<methods>
+<method>
+<!-- <include name="test1"></include> -->
+<exclude name="test2"></exclude>
+</method>
+</methods>
+</class>
+
+</classes>
+
+</test>
+</suite>

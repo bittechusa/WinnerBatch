@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="205" duration-ms="6127" started-at="2016-03-05T18:44:45Z" finished-at="2016-03-05T18:44:51Z">
+    <groups>
+    </groups>
+    <test name="moga" duration-ms="6127" started-at="2016-03-05T18:44:45Z" finished-at="2016-03-05T18:44:51Z">
+      <class name="com.bit.test.SmokeTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.bit.test.SmokeTest@7a0ac6e3]" name="start" is-config="true" duration-ms="6029" started-at="2016-03-05T13:44:45Z" finished-at="2016-03-05T13:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.bit.test.SmokeTest@7a0ac6e3]" name="test1" duration-ms="4" started-at="2016-03-05T13:44:51Z" finished-at="2016-03-05T13:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.bit.test.SmokeTest@7a0ac6e3]" name="end" is-config="true" duration-ms="82" started-at="2016-03-05T13:44:51Z" finished-at="2016-03-05T13:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.bit.test.SmokeTest -->
+    </test> <!-- moga -->
+  </suite> <!-- 205 -->
+</testng-results>

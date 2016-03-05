@@ -1,0 +1,7 @@
+2016-03-05 13:36:49,083 INFO  [BaseTest] file initialized 
+2016-03-05 13:36:54,958 INFO  [BaseTest] url initialized 
+2016-03-05 13:36:55,048 INFO  [BaseTest] browser quit 
+2016-03-05 13:44:45,934 INFO  [BaseTest] file initialized 
+2016-03-05 13:44:51,823 INFO  [BaseTest] url initialized 
+2016-03-05 13:44:51,827 INFO  [SmokeTest] test1 started 
+2016-03-05 13:44:51,909 INFO  [BaseTest] browser quit 
