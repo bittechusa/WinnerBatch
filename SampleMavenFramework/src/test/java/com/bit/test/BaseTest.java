@@ -3,6 +3,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -27,6 +28,9 @@ public class BaseTest
 		dr=new FirefoxDriver();
 		dr.get(p.getProperty("url"));
 		log.info("url initialized");
+		dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		dr.manage().window().maximize();
+		dr.navigate().refresh();
 		System.out.println();
 	}
 	

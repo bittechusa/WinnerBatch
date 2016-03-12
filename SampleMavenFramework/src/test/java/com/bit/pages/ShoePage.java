@@ -2,7 +2,11 @@ package com.bit.pages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.testng.Assert;
 
@@ -13,9 +17,14 @@ public class ShoePage extends LoadableComponent<ShoePage>
 	FirefoxDriver dr;
 	Utility ut;
 	Logger log=Logger.getLogger(Utility.class);
+	@FindBy(how=How.XPATH , using=".//*[@id='slotMcolMain1']/div/div[2]/ul/li[1]/a/div/img")
+	WebElement shoeProduct;
+	
+
 	public ShoePage(FirefoxDriver dr)
 	{
 		this.dr=dr;
+	PageFactory.initElements(dr, this);
 	}
 	
 	public void verifyShoeTitle()
@@ -26,8 +35,12 @@ public class ShoePage extends LoadableComponent<ShoePage>
 	
 	public ProdaShoe clickShoeProduct()
 	{
+		//shoeProduct.click();
 		ut=new Utility(dr);
-		ut.click(By.xpath(".//*[@id='slotMcolMain1']/div/div[2]/ul/li[1]/a/div/img"));
+		//ut.waitForElement(shoeProduct);
+		ut.fluentWaitForElement(shoeProduct);
+		log.info("fluent");
+		ut.click(shoeProduct);
 		return new ProdaShoe();
 	}
 

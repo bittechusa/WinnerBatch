@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.bit.pages.HomePage;
 import com.bit.pages.ProdaShoe;
 import com.bit.pages.ShoePage;
+import com.bit.utility.Utility;
 
 public class SmokeTest extends BaseTest
 {
@@ -13,6 +14,8 @@ public class SmokeTest extends BaseTest
 	HomePage hp;
 	ShoePage so;
 	ProdaShoe ps;
+	//Utility ut;
+	
 	@Test
 	public void test1()
 	{
@@ -21,7 +24,9 @@ public class SmokeTest extends BaseTest
 		hp.verifyHomeTitle();
 		so=hp.clickShoeLink().get();
 		so.verifyShoeTitle();
-		ps=so.clickShoeProduct().get();
+		so.clickShoeProduct();
+		
+		ps=so.clickShoeProduct();
 		
 	}
 	@Test

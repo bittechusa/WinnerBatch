@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [205]">
-  <test name="moga">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.bit.test.SmokeTest">
         <methods>
-          <exclude name="test2"/>
+          <include name="test1"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- com.bit.test.SmokeTest -->
     </classes>
-  </test> <!-- moga -->
-</suite> <!-- Failed suite [205] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
