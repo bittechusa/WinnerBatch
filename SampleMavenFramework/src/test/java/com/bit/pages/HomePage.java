@@ -34,7 +34,7 @@ public class HomePage
 	{
 		ut=new Utility(dr);
 		ut.verifyTitle("bluefly");
-		int size=ut.getCountLink(By.tagName("a"));
+		int size= ut.getCountLink(By.tagName("a"));
 		log.info("link count "+size);
 	}
 	public void searchText()
