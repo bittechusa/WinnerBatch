@@ -8,7 +8,6 @@
           <include name="test1"/>
           <include name="end"/>
           <include name="start"/>
-          <include name="test2"/>
         </methods>
       </class> <!-- com.bit.test.SmokeTest -->
     </classes>

@@ -1,19 +1,40 @@
-2016-03-12 14:44:20,210 INFO  [BaseTest] file initialized 
-2016-03-12 14:44:27,458 INFO  [BaseTest] url initialized 
-2016-03-12 14:44:32,118 INFO  [SmokeTest] test1 started 
-2016-03-12 14:44:33,868 INFO  [Utility] bluefly is not present title 
-2016-03-12 14:44:38,864 INFO  [Utility] assert pass 
-2016-03-12 14:44:38,911 INFO  [Utility] shoe is not present title 
-2016-03-12 14:44:39,744 INFO  [BaseTest] browser quit 
-2016-03-12 14:48:08,550 INFO  [BaseTest] file initialized 
-2016-03-12 14:48:16,212 INFO  [BaseTest] url initialized 
-2016-03-12 14:48:29,872 INFO  [SmokeTest] test1 started 
-2016-03-12 14:48:33,015 INFO  [Utility] bluefly is not present title 
-2016-03-12 14:48:36,758 INFO  [Utility] assert pass 
-2016-03-12 14:48:36,778 INFO  [Utility] shoe is not present title 
-2016-03-12 14:48:36,781 INFO  [Utility] wait 
-2016-03-12 14:48:37,082 INFO  [Utility] fluent 
-2016-03-12 14:48:37,256 INFO  [Utility] wait 
-2016-03-12 14:48:51,957 INFO  [BaseTest] browser quit 
-2016-03-12 14:48:51,968 INFO  [BaseTest] file initialized 
-2016-03-12 14:48:59,114 INFO  [BaseTest] url initialized 
+2016-03-13 14:58:24,729 INFO  [BaseTest] file initialized 
+2016-03-13 14:58:32,604 INFO  [BaseTest] url initialized 
+2016-03-13 14:58:40,010 INFO  [SmokeTest] test1 started 
+2016-03-13 14:58:45,630 INFO  [Utility] bluefly is not present title 
+2016-03-13 14:58:59,195 INFO  [HomePage] not clicke 
+2016-03-13 14:58:59,286 INFO  [Utility] assert fail 
+2016-03-13 14:59:02,111 INFO  [Utility] assert pass 
+2016-03-13 14:59:02,130 INFO  [Utility] shoe is not present title 
+2016-03-13 14:59:02,133 INFO  [Utility] wait 
+2016-03-13 14:59:02,184 INFO  [Utility] fluent 
+2016-03-13 14:59:02,375 INFO  [Utility] wait 
+2016-03-13 14:59:16,651 INFO  [BaseTest] browser quit 
+2016-03-13 15:03:03,398 INFO  [BaseTest] file initialized 
+2016-03-13 15:03:11,397 INFO  [BaseTest] url initialized 
+2016-03-13 15:03:32,806 INFO  [SmokeTest] test1 started 
+2016-03-13 15:03:37,846 INFO  [Utility] bluefly is not present title 
+2016-03-13 15:03:38,240 INFO  [HomePage] main-nav-link-shoes main-nav-link 
+2016-03-13 15:03:41,662 INFO  [Utility] assert fail 
+2016-03-13 15:03:41,680 INFO  [Utility] assert pass 
+2016-03-13 15:03:41,698 INFO  [Utility] shoe is not present title 
+2016-03-13 15:03:41,701 INFO  [Utility] wait 
+2016-03-13 15:03:41,759 INFO  [Utility] fluent 
+2016-03-13 15:03:41,948 INFO  [Utility] wait 
+2016-03-13 15:03:56,039 INFO  [BaseTest] browser quit 
+2016-03-13 15:10:24,514 INFO  [BaseTest] file initialized 
+2016-03-13 15:10:32,242 INFO  [BaseTest] url initialized 
+2016-03-13 15:10:40,333 INFO  [SmokeTest] test1 started 
+2016-03-13 15:10:59,544 INFO  [Utility] bluefly is not present title 
+2016-03-13 15:10:59,839 INFO  [HomePage] 501 
+2016-03-13 15:11:00,176 INFO  [HomePage] main-nav-link-shoes main-nav-link 
+2016-03-13 15:11:03,022 INFO  [Utility] assert fail 
+2016-03-13 15:11:03,048 INFO  [Utility] assert pass 
+2016-03-13 15:11:03,070 INFO  [Utility] shoe is not present title 
+2016-03-13 15:11:03,073 INFO  [Utility] wait 
+2016-03-13 15:11:03,125 INFO  [Utility] fluent 
+2016-03-13 15:11:03,309 INFO  [Utility] wait 
+2016-03-13 15:11:18,180 INFO  [BaseTest] browser quit 
+2016-03-13 15:22:09,970 INFO  [BaseTest] file initialized 
+2016-03-13 15:22:18,830 INFO  [BaseTest] url initialized 
+2016-03-13 15:22:45,795 INFO  [BaseTest] browser quit 

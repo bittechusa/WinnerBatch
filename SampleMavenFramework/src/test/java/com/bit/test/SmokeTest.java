@@ -22,6 +22,7 @@ public class SmokeTest extends BaseTest
 		log.info("test1 started");
 		hp=new HomePage(dr);
 		hp.verifyHomeTitle();
+		hp.hverOverOnMenu();
 		so=hp.clickShoeLink().get();
 		so.verifyShoeTitle();
 		so.clickShoeProduct();
@@ -32,7 +33,8 @@ public class SmokeTest extends BaseTest
 	@Test
 	public void test2()
 	{
-		
+		hp=new HomePage(dr);
+		hp.searchText();
 	}
 
 }

@@ -9,6 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,6 +23,30 @@ public class Utility
 	public Utility(FirefoxDriver dr)
 	{
 		this.dr=dr;
+	}
+	
+	public void typeOntext(WebElement ele,String text)
+	{
+		ele.sendKeys(text);
+	}
+	
+	public String getAttributeFromElement(WebElement ele)
+	{
+		return ele.getAttribute("class");
+	}
+	
+	public int getCountLink(By by)
+	{
+		return dr.findElements(by).size();
+	}
+	public String getTextFromElement(WebElement ele)
+	{
+		return ele.getText();
+	}
+	public void mouseOver(WebElement ele)
+	{
+		Actions ac=new Actions(dr);
+		ac.moveToElement(ele).build().perform();
 	}
 	public void click(WebElement by)
 	{
