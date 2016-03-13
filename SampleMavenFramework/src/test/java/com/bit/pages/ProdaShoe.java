@@ -1,5 +1,6 @@
 package com.bit.pages;
 
-public class ProdaShoe {
+public class ProdaShoe 
+{
 
 }

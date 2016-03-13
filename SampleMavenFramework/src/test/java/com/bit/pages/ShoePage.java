@@ -46,14 +46,14 @@ public class ShoePage extends LoadableComponent<ShoePage>
 
 	@Override
 	protected void load() {
-		// TODO Auto-generated method stub
+		
 		dr.get("http://www.bluefly.com/a/shoes");
 		log.info("assert fail");
 	}
 
 	@Override
 	protected void isLoaded() throws Error {
-		// TODO Auto-generated method stub
+		
 		Assert.assertTrue(dr.getCurrentUrl().equals("http://www.bluefly.com/a/shoes"));
 		log.info("assert pass");
 	}
