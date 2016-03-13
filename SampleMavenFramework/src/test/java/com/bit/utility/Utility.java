@@ -1,12 +1,12 @@
 package com.bit.utility;
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import java.util.concurrent.TimeUnit; 
 import java.util.function.Function;
-=======
+//=======
 import java.util.concurrent.TimeUnit;
 //import java.util.function.Function;
->>>>>>> bcc2fff0b2071ae7fe2052d907e6c9a70ad5b804
+//>>>>>>> bcc2fff0b2071ae7fe2052d907e6c9a70ad5b804
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
