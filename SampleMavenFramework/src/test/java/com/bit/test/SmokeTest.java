@@ -12,7 +12,7 @@ public class SmokeTest extends BaseTest
 {
 	Logger log=Logger.getLogger(SmokeTest.class);
 	HomePage hp;
-	ShoePage sp;
+	ShoePage so;
 	ProdaShoe ps;
 	//Utility ut;
 	
@@ -22,18 +22,18 @@ public class SmokeTest extends BaseTest
 		log.info("test1 started");
 		hp=new HomePage(dr);
 		hp.verifyHomeTitle();
-<<<<<<< HEAD
+//<<<<<<< HEAD
 		hp.hverOverOnMenu();
 		so=hp.clickShoeLink().get();
 		so.verifyShoeTitle();
 		so.clickShoeProduct();
-=======
-		sp=hp.clickShoeLink().get();
-		sp.verifyShoeTitle();
-		sp.clickShoeProduct();
->>>>>>> 4ecc9eb81f4c7615dd58dda382c2298d56246ff2
+//=======
+		so=hp.clickShoeLink().get();
+		so.verifyShoeTitle();
+		so.clickShoeProduct();
+//>>>>>>> 4ecc9eb81f4c7615dd58dda382c2298d56246ff2
 		
-		ps=sp.clickShoeProduct();
+		ps=so.clickShoeProduct();
 		
 	}
 	@Test
