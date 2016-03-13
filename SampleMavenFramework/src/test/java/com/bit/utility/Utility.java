@@ -1,19 +1,17 @@
 package com.bit.utility;
 
 import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
+//import java.util.function.Function;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.bit.test.BaseTest;
+import com.google.common.base.Function;
 
 public class Utility 
 {

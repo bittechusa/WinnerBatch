@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: saleh
 Build-Jdk: 1.8.0_45
+=======
+Built-By: MDNAFIZUR
+Build-Jdk: 1.8.0_05
+>>>>>>> 7ef07731b0ed6ffda3616bf57f4e2e5ab7002b1b
 Created-By: Maven Integration for Eclipse
 
