@@ -19,6 +19,7 @@ public class Utility
 {
 	static FirefoxDriver dr;
 	Logger log=Logger.getLogger(Utility.class);
+	
 	public Utility(FirefoxDriver dr)
 	{
 		this.dr=dr;
@@ -41,14 +42,15 @@ public class Utility
 	{
 		try{
 			if(ele.isDisplayed())
-			{
-				log.info(ele+"is present");
+				
+				{
+					log.info(ele+"is present");
+				}
 			}
-			
-		}catch(NoSuchElementException e)
-		{
-			log.info(ele+" not present");
-		}
+		catch(NoSuchElementException e)
+				{
+					log.info(ele+" not present");
+				}
 	}
 	public static WebElement waitForElement(WebElement ele)
 	{
@@ -63,9 +65,11 @@ public class Utility
 		wait.pollingEvery(2, TimeUnit.SECONDS);
 		wait.ignoring(NoSuchElementException.class);
 		
-		Function<WebElement,Boolean> f=new Function<WebElement,Boolean>(){
+		Function<WebElement,Boolean> f=new Function<WebElement,Boolean>()
+		{
 
-			public Boolean apply(WebElement t) {
+			public Boolean apply(WebElement t)
+			{
 			//	System.out.println("wait");
 				log.info("wait");
 				if(t.isDisplayed())
