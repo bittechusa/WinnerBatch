@@ -1,4 +1,4 @@
-package com.bit.test;
+ package com.bit.test;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
@@ -12,7 +12,7 @@ public class SmokeTest extends BaseTest
 {
 	Logger log=Logger.getLogger(SmokeTest.class);
 	HomePage hp;
-	ShoePage so;
+	ShoePage sp;
 	ProdaShoe ps;
 	//Utility ut;
 	
@@ -22,11 +22,11 @@ public class SmokeTest extends BaseTest
 		log.info("test1 started");
 		hp=new HomePage(dr);
 		hp.verifyHomeTitle();
-		so=hp.clickShoeLink().get();
-		so.verifyShoeTitle();
-		so.clickShoeProduct();
+		sp=hp.clickShoeLink().get();
+		sp.verifyShoeTitle();
+		sp.clickShoeProduct();
 		
-		ps=so.clickShoeProduct();
+		ps=sp.clickShoeProduct();
 		
 	}
 	@Test
