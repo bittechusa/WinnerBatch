@@ -37,10 +37,15 @@ public class SmokeTest extends BaseTest
 		
 	}
 	@Test
-	public void test2()
+	public void test2() throws InterruptedException
 	{
-		hp=new HomePage(dr);
-		hp.searchText();
+		//hp=new HomePage(dr);
+		//so=hp.clickShoeLink();
+		//so.clickShoeProduct();
+		so=new ShoePage(dr);
+		so.clickShoeProductWithWhileLoop();
+		//so.loopConcept();
+		
 	}
 
 }

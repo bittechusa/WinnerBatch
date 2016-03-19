@@ -1,5 +1,7 @@
  package com.bit.pages;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -43,9 +45,13 @@ public class HomePage
 		ut.typeOntext(dr.findElement(By.xpath(".//*[@id='searchterms']")), "women");
 		ut.click(dr.findElement(By.xpath(".//*[@id='homeContainer']/header/div[1]/div[2]/div[2]/form/span[2]")));
 	}
+	
+	
+	
 	public ShoePage clickShoeLink()
 	{
-		ut=new Utility(dr);
+		shoeLink.click();
+		/*ut=new Utility(dr);
 		String test=ut.getTextFromElement(shoeLink);
 		if(test.equals("Shofds"))
 		{
@@ -56,7 +62,7 @@ public class HomePage
 			log.info(ut.getAttributeFromElement(shoeLink));
 		//ut=new Utility(dr);
 		//ut.click(shoeLink);
-		System.out.println("shoe");
+		System.out.println("shoe");*/
 		return new ShoePage(dr);
 	}
 	
