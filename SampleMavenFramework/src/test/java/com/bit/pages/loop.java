@@ -16,11 +16,41 @@ public class loop
 	{
 		this.dr=dr;
 	}
+	public static void m2(int a[])
+	{
+		System.out.println(a[0]);
+		Arrays.sort(a);
+		System.out.println(a[a.length-1]);
+		int min=a[0];
+		for(int i=1;i<a.length;i++)
+		{
+			if(a[i]<min)
+			{
+				min=a[i];
+			}
+		}
+		System.out.println(min);
+	}
+	
 	@Test
 	public static void arrayDemo()
 	{
+		
 		int a=9;
-		int b[]={2,4,7,4};
+		int b[]={2,4,7,4,3};
+		m2(b);
+		Arrays.sort(b);
+		System.out.println(b[b.length-1]);
+		int max=b[0];
+		for(int i=1;i<b.length;i++)
+		{
+			if(b[i]>max)
+			{
+				max=b[i];
+			}
+		}
+		System.out.println(max);
+		
 		String s="dhgf";
 		
 		String color[]={"red","green"};
