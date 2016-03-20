@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.bit.pages.HomePage;
 import com.bit.pages.ProdaShoe;
 import com.bit.pages.ShoePage;
+import com.bit.pages.loop;
 import com.bit.utility.Utility;
 
 public class SmokeTest extends BaseTest
@@ -46,6 +47,14 @@ public class SmokeTest extends BaseTest
 		so.clickShoeProductWithWhileLoop();
 		//so.loopConcept();
 		
+	}
+	@Test
+	public void test3() throws InterruptedException
+	{
+		loop lp=new loop(dr);
+		//lp.loop();
+		//lp.selectDropDown();
+		lp.arrayDemo();
 	}
 
 }

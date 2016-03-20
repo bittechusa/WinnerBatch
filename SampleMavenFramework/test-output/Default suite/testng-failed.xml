@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bit.test.SmokeTest">
+      <class name="com.bit.pages.loop">
         <methods>
-          <include name="end"/>
-          <include name="start"/>
-          <include name="test2"/>
+          <include name="arrayDemo"/>
         </methods>
-      </class> <!-- com.bit.test.SmokeTest -->
+      </class> <!-- com.bit.pages.loop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
