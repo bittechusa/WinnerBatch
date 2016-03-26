@@ -67,3 +67,51 @@
 2016-03-20 13:42:32,970 INFO  [BaseTest] file initialized 
 2016-03-20 13:42:40,420 INFO  [BaseTest] url initialized 
 2016-03-20 13:42:51,412 INFO  [BaseTest] browser quit 
+2016-03-26 13:35:27,814 INFO  [BaseTest] file initialized 
+2016-03-26 13:35:35,560 INFO  [BaseTest] url initialized 
+2016-03-26 13:40:56,397 INFO  [BaseTest] file initialized 
+2016-03-26 13:41:03,466 INFO  [BaseTest] url initialized 
+2016-03-26 13:42:02,050 INFO  [BaseTest] file initialized 
+2016-03-26 13:42:13,046 INFO  [BaseTest] url initialized 
+2016-03-26 15:00:30,525 INFO  [BaseTest] file initialized 
+2016-03-26 15:00:37,812 INFO  [BaseTest] url initialized 
+2016-03-26 15:00:52,403 INFO  [SmokeTest] test1 started 
+2016-03-26 15:00:52,436 INFO  [Utility] bluefly is not present title 
+2016-03-26 15:00:52,684 INFO  [HomePage] link count 472 
+2016-03-26 15:00:54,904 INFO  [Utility] assert pass 
+2016-03-26 15:00:55,468 INFO  [Utility] shoe is not present title 
+2016-03-26 15:00:55,472 INFO  [Utility] wait 
+2016-03-26 15:00:55,740 INFO  [Utility] fluent 
+2016-03-26 15:01:09,879 INFO  [Utility] assert pass 
+2016-03-26 15:01:09,899 INFO  [Utility] shoe is not present title 
+2016-03-26 15:01:09,899 INFO  [Utility] wait 
+2016-03-26 15:01:09,955 INFO  [Utility] fluent 
+2016-03-26 15:01:52,028 INFO  [BaseTest] file initialized 
+2016-03-26 15:01:59,570 INFO  [BaseTest] url initialized 
+2016-03-26 15:02:52,836 INFO  [BaseTest] file initialized 
+2016-03-26 15:03:00,234 INFO  [BaseTest] url initialized 
+2016-03-26 15:03:49,666 INFO  [BaseTest] file initialized 
+2016-03-26 15:03:57,296 INFO  [BaseTest] url initialized 
+2016-03-26 15:07:00,000 INFO  [BaseTest] file initialized 
+2016-03-26 15:07:07,731 INFO  [BaseTest] url initialized 
+2016-03-26 15:07:12,255 INFO  [SmokeTest] test1 started 
+2016-03-26 15:07:16,119 INFO  [Utility] bluefly is not present title 
+2016-03-26 15:07:16,381 INFO  [HomePage] link count 472 
+2016-03-26 15:07:19,257 INFO  [Utility] assert pass 
+2016-03-26 15:07:19,279 INFO  [Utility] shoe is not present title 
+2016-03-26 15:07:19,285 INFO  [Utility] wait 
+2016-03-26 15:07:19,370 INFO  [Utility] fluent 
+2016-03-26 15:09:42,206 INFO  [BaseTest] file initialized 
+2016-03-26 15:09:53,751 INFO  [BaseTest] url initialized 
+2016-03-26 15:09:56,093 INFO  [BaseTest] browser quit 
+2016-03-26 15:09:56,104 INFO  [BaseTest] file initialized 
+2016-03-26 15:10:00,116 INFO  [BaseTest] url initialized 
+2016-03-26 15:11:22,745 INFO  [BaseTest] file initialized 
+2016-03-26 15:11:55,564 INFO  [BaseTest] file initialized 
+2016-03-26 15:12:03,939 INFO  [BaseTest] url initialized 
+2016-03-26 15:12:05,813 INFO  [BaseTest] browser quit 
+2016-03-26 15:12:05,831 INFO  [BaseTest] file initialized 
+2016-03-26 15:12:12,426 INFO  [BaseTest] url initialized 
+2016-03-26 15:12:14,132 INFO  [BaseTest] browser quit 
+2016-03-26 15:12:14,141 INFO  [BaseTest] file initialized 
+2016-03-26 15:12:15,337 INFO  [BaseTest] url initialized 

@@ -9,8 +9,10 @@ import java.util.concurrent.TimeUnit;
 //>>>>>>> bcc2fff0b2071ae7fe2052d907e6c9a70ad5b804
 
 
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -71,15 +73,29 @@ public class Utility
 	{
 		try{
 			if(ele.isDisplayed())
-				
+			
 				{
+				Thread.sleep(3000);
 					log.info(ele+"is present");
 				}
 			}
+		
 		catch(NoSuchElementException e)
-				{
-					log.info(ele+" not present");
-				}
+		{
+			log.info(ele+" not present");
+		}
+
+catch(ElementNotVisibleException e)
+{
+	log.info(ele+" not present");
+}
+catch(Exception e)
+{
+	log.info(ele+" not present");
+}
+		finally{
+			System.out.println("always execute");
+		}
 	}
 	public static WebElement waitForElement(WebElement ele)
 	{

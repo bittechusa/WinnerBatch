@@ -7,13 +7,15 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest 
 {
-	FirefoxDriver dr;
+	WebDriver dr;
 	Logger log=Logger.getLogger(BaseTest.class);
 	@BeforeMethod
 	public void start() throws IOException
@@ -25,7 +27,8 @@ public class BaseTest
 		//System.out.println("file initialized");
 		Properties p=new Properties();
 		p.load(fis);
-		dr=new FirefoxDriver();
+		//dr=new FirefoxDriver();
+		dr=new ChromeDriver();
 		dr.get(p.getProperty("url"));
 		log.info("url initialized");
 		dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

@@ -1,0 +1,21 @@
+<suite name="sa">
+     
+    <test name="unit">
+
+<classes>
+
+ <class name="com.bit.test.SmokeTest">
+<methods>
+<method>
+<include name="test3"></include>
+
+</method>
+</methods>
+</class>
+
+</classes>
+
+</test>
+    
+ 
+    </suite>
