@@ -17,13 +17,13 @@ public class SmokeTest extends BaseTest
 	ProdaShoe ps;
 	//Utility ut;
 	
-	@Test
+	@Test(priority=1)
 	public void test1()
 	{
 		log.info("test1 started");
 		hp=new HomePage(dr);
 		hp.verifyHomeTitle();
-//<<<<<<< HEAD
+
 		hp.hverOverOnMenu();
 		so=hp.clickShoeLink().get();
 		so.verifyShoeTitle();
@@ -32,12 +32,12 @@ public class SmokeTest extends BaseTest
 		so=hp.clickShoeLink().get();
 		so.verifyShoeTitle();
 		so.clickShoeProduct();
-//>>>>>>> 4ecc9eb81f4c7615dd58dda382c2298d56246ff2
+
 		
 		ps=so.clickShoeProduct();
 		
 	}
-	@Test
+	@Test(dependsOnMethods={"test1"})
 	public void test2() throws InterruptedException
 	{
 		//hp=new HomePage(dr);
@@ -48,7 +48,7 @@ public class SmokeTest extends BaseTest
 		//so.loopConcept();
 		
 	}
-	@Test
+	@Test(priority=2)
 	public void test3() throws InterruptedException
 	{
 		loop lp=new loop(dr);

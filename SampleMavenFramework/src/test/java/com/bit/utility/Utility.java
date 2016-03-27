@@ -10,10 +10,12 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -24,12 +26,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility 
 {
-	static FirefoxDriver dr;
+	static WebDriver dr;
 	Logger log=Logger.getLogger(Utility.class);
 	
-	public Utility(FirefoxDriver dr)
+	public Utility(WebDriver dr2)
 	{
-		this.dr=dr;
+		this.dr=dr2;
 	}
 	
 	public void typeOntext(WebElement ele,String text)

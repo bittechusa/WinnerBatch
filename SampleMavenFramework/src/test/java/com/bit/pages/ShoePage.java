@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -17,17 +18,17 @@ import com.bit.utility.Utility;
 
 public class ShoePage extends LoadableComponent<ShoePage>
 {
-	FirefoxDriver dr;
+	WebDriver dr;
 	Utility ut;
 	Logger log=Logger.getLogger(Utility.class);
 	@FindBy(how=How.XPATH , using=".//*[@id='slotMcolMain1']/div/div[2]/ul/li[1]/a/div/img")
 	WebElement shoeProduct;
 	
 
-	public ShoePage(FirefoxDriver dr)
+	public ShoePage(WebDriver dr2)
 	{
-		this.dr=dr;
-	PageFactory.initElements(dr, this);
+		this.dr=dr2;
+	PageFactory.initElements(dr2, this);
 	}
 	public void clickShoeProductWithWhileLoop() throws InterruptedException
 	{

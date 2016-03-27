@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
@@ -15,16 +16,16 @@ import com.bit.utility.Utility;
 public class HomePage
 {
 	Logger log=Logger.getLogger(HomePage.class);
-	FirefoxDriver dr;
+	WebDriver dr;
 	Utility ut;
 	@FindBy(how=How.XPATH, using="//ul[@id='main-nav-list']/li[2]/a")
 	WebElement shoeLink;
 	
 	//public WebElement shoeLink=dr.findElement(By.xpath(".//*[@id='main-nav-shoes']/a"));
-	public HomePage(FirefoxDriver dr)
+	public HomePage(WebDriver dr2)
 	{
-		this.dr=dr;
-		PageFactory.initElements(dr, this);
+		this.dr=dr2;
+		PageFactory.initElements(dr2, this);
 	}
 	public void hverOverOnMenu()
 	{
