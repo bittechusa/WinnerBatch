@@ -1,6 +1,11 @@
  package com.bit.test;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.bit.pages.HomePage;
@@ -15,7 +20,36 @@ public class SmokeTest extends BaseTest
 	HomePage hp;
 	ShoePage so;
 	ProdaShoe ps;
-	//Utility ut;
+	Utility ut;
+	
+	/*@DataProvider(name="hi")
+	public Object[][] getData()
+	{
+		return new Object[][]{{"user1","1234"},{"user2","1234"}};
+	}*/
+	
+	@Test
+	public void m1() throws IOException
+	{
+		ut=new Utility(dr);
+		
+		ut.screenShot();
+	}
+	
+	@Test(dataProvider="hi" , dataProviderClass=Utility.class)
+	public void logIntoFacebook(String moga2, String moga1) throws InterruptedException
+	{
+		FirefoxDriver dr;
+		dr = new FirefoxDriver();
+		dr.get("http://www.facebook.com");
+		dr.manage().window().maximize();
+		dr.findElement(By.xpath(".//*[@id='email']")).sendKeys(moga2);
+		dr.findElement(By.xpath(".//*[@id='pass']")).sendKeys(moga1);
+		dr.findElement(By.xpath(".//*[@id='u_0_x']")).click();
+		Thread.sleep(5000);
+		dr.quit();
+	}
+	
 	
 	@Test(priority=1)
 	public void test1()
@@ -37,7 +71,9 @@ public class SmokeTest extends BaseTest
 		ps=so.clickShoeProduct();
 		
 	}
-	@Test(dependsOnMethods={"test1"})
+	
+	
+	@Test(dependsOnMethods={"test1"}, alwaysRun=true)
 	public void test2() throws InterruptedException
 	{
 		//hp=new HomePage(dr);

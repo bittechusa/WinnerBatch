@@ -10,6 +10,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -19,6 +20,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.bit.utility.Utility;
 
 public class BaseTest 
 {
@@ -50,8 +53,8 @@ public class BaseTest
 		//System.out.println("file initialized");
 		Properties p=new Properties();
 		p.load(fis);
-		//dr=new FirefoxDriver();
-		dr=new ChromeDriver();
+		dr=new FirefoxDriver();
+		//dr=new ChromeDriver();
 		dr.get(p.getProperty("url"));
 		log.info("url initialized");
 		dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -68,8 +71,8 @@ public class BaseTest
 	public void m2()
 	{
 		System.out.println("test2");
-	}*/
-	/*@AfterSuite
+	}
+	@AfterSuite
 	public void asui()
 	{
 		System.out.println("aftersuit");
@@ -87,8 +90,13 @@ public class BaseTest
 	*/
 	
 	@AfterMethod
-	public void end()
+	public void end(ITestResult i) throws IOException
 	{
+		if(i.getStatus()==i.FAILURE)
+		{
+			Utility.screenShot();
+			log.info(i.getTestClass().getName());
+		}
 		System.out.println("aftermethod");
 		dr.quit();
 		log.info("browser quit");

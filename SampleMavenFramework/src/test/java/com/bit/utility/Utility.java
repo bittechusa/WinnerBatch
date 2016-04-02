@@ -1,5 +1,7 @@
 package com.bit.utility;
 
+import java.io.File;
+import java.io.IOException;
 //<<<<<<< HEAD
 import java.util.concurrent.TimeUnit; 
 import java.util.function.Function;
@@ -8,13 +10,13 @@ import java.util.concurrent.TimeUnit;
 //import java.util.function.Function;
 //>>>>>>> bcc2fff0b2071ae7fe2052d907e6c9a70ad5b804
 
-
-
-
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -22,6 +24,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 
 
 public class Utility 
@@ -33,10 +36,20 @@ public class Utility
 	{
 		this.dr=dr2;
 	}
+	public static void screenShot() throws IOException
+	{
+		  File sf=((TakesScreenshot)dr).getScreenshotAs(OutputType.FILE);
+	        FileUtils.copyFile(sf, new File("./image/shot"+Math.random()*1000+".png"),true);
+	}
 	
 	public void typeOntext(WebElement ele,String text)
 	{
 		ele.sendKeys(text);
+	}
+	@DataProvider(name="hi")
+	public Object[][] getData()
+	{
+		return new Object[][]{{"user1","1234"},{"user2","1234"}};
 	}
 	
 	public String getAttributeFromElement(WebElement ele)
