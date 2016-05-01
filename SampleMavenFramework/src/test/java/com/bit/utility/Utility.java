@@ -25,6 +25,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 
 public class Utility 
@@ -36,6 +37,37 @@ public class Utility
 	{
 		this.dr=dr2;
 	}
+	@Test
+	public static void reverseString()
+	{
+		String s ="Hellow";
+		char[] a=s.toCharArray();
+		StringBuffer b=new StringBuffer();
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			b.append(a[i]).toString();
+		}
+		System.out.println(b);
+		
+	}
+	public void s1()
+	{
+		String testResult="Failed";
+		switch(testResult)
+		{
+			case "Failed":
+				System.out.println("crying");
+				break;
+			case "Passed":
+				System.out.println("walking");
+				break;
+			case "Skipp":
+				System.out.println("some");
+				break;
+			default:
+				System.out.println("not match");
+		}
+	}
 	public static void screenShot() throws IOException
 	{
 		  File sf=((TakesScreenshot)dr).getScreenshotAs(OutputType.FILE);
@@ -46,6 +78,7 @@ public class Utility
 	{
 		ele.sendKeys(text);
 	}
+	
 	@DataProvider(name="hi")
 	public Object[][] getData()
 	{
@@ -86,38 +119,39 @@ public class Utility
 	
 	public void verifyElement(WebElement ele)
 	{
-		try{
+		try
+		{
 			if(ele.isDisplayed())
-			
-				{
+			{
 				Thread.sleep(3000);
-					log.info(ele+"is present");
-				}
+				log.info(ele+"is present");
 			}
-		
+		}
 		catch(NoSuchElementException e)
 		{
 			log.info(ele+" not present");
 		}
-
-catch(ElementNotVisibleException e)
-{
-	log.info(ele+" not present");
-}
-catch(Exception e)
-{
-	log.info(ele+" not present");
-}
-		finally{
+		catch(ElementNotVisibleException e)
+		{
+			log.info(ele+" not present");
+		}
+		catch(Exception e)
+		{
+			log.info(ele+" not present");
+		}
+		finally
+		{
 			System.out.println("always execute");
 		}
 	}
+	
 	public static WebElement waitForElement(WebElement ele)
 	{
 		WebDriverWait wait=new WebDriverWait(dr,10);
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
 		return ele;
 	}
+	
 	public void fluentWaitForElement(WebElement ele)
 	{
 		FluentWait<WebElement> wait=new FluentWait<WebElement>(ele);
@@ -127,7 +161,6 @@ catch(Exception e)
 		
 		Function<WebElement,Boolean> f=new Function<WebElement,Boolean>()
 		{
-
 			public Boolean apply(WebElement t)
 			{
 			//	System.out.println("wait");
@@ -136,12 +169,12 @@ catch(Exception e)
 				{
 					System.out.println("present");
 					return true;
-				}else
-					
+				}
+				else
 				return false;
 			}
 
-			};
+		};
 	   f.apply(ele);
 	}
 	

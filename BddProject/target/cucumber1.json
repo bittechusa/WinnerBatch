@@ -1,0 +1,238 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6107073988,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i open bittech url",
+            "match": {
+              "location": "StepDefination1.i_open_bittech_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "",
+        "description": "",
+        "id": "login-process;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 440501116,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i clicked login button",
+            "match": {
+              "location": "StepDefination1.i_clicked_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42655745,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat StepDefination1.i_enter(StepDefination1.java:68)\n\tat ✽.And i enter \"asad\"(/Users/bittech/Documents/workspace/BddProject/win.feature:20)\n",
+              "status": "pending"
+            },
+            "line": 20,
+            "name": "i enter \"asad\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "asad",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDefination1.i_enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "i enterp \"12234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12234",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination1.i_enterp(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "i click login",
+            "match": {
+              "location": "StepDefination1.i_click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "i should see login page",
+            "match": {
+              "location": "StepDefination1.i_should_see_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@p"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7441841692,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i open bittech url",
+            "match": {
+              "location": "StepDefination1.i_open_bittech_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "",
+        "description": "",
+        "id": "login-process;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 441799473,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i clicked login button",
+            "match": {
+              "location": "StepDefination1.i_clicked_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43111619,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat StepDefination1.i_enter(StepDefination1.java:68)\n\tat ✽.And i enter \"shahid\"(/Users/bittech/Documents/workspace/BddProject/win.feature:20)\n",
+              "status": "pending"
+            },
+            "line": 20,
+            "name": "i enter \"shahid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shahid",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDefination1.i_enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "i enterp \"123455\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123455",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination1.i_enterp(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "i click login",
+            "match": {
+              "location": "StepDefination1.i_click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "i should see login page",
+            "match": {
+              "location": "StepDefination1.i_should_see_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@p"
+          }
+        ]
+      }
+    ],
+    "name": "login process",
+    "description": "",
+    "id": "login-process",
+    "keyword": "Feature",
+    "uri": "/Users/bittech/Documents/workspace/BddProject/win.feature"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6464508132,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "i enter facebook",
+            "match": {
+              "location": "StepDefination.i_enter_facebook()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "signup",
+        "description": "",
+        "id": "login-process;signup",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107633,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter firstname",
+            "match": {
+              "location": "StepDefination.i_enter_firstname()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58283,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i enter lastname",
+            "match": {
+              "location": "StepDefination.i_enter_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67905617,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i should see login page",
+            "match": {
+              "location": "StepDefination.i_should_see_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "login process",
+    "description": "",
+    "id": "login-process",
+    "keyword": "Feature",
+    "uri": "/Users/bittech/Documents/workspace/BddProject/LogIn.feature"
+  }
+]

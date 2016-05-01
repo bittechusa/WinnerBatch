@@ -6,6 +6,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,6 +47,7 @@ public class BaseTest
 	public void start() throws IOException
 	{
 		System.out.println("beforemethod");
+		//PropertyConfigurator.configure("log4j.properties");
 		DOMConfigurator.configure("log4j.xml");
 		FileInputStream fis=new FileInputStream("config.properties");
 		log.info("file initialized");

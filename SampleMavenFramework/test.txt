@@ -1,0 +1,12 @@
+2016-04-02 14:10:07,942 INFO  [BaseTest] file initialized 
+2016-04-02 14:10:10,209 INFO  [BaseTest] url initialized 
+2016-04-02 14:10:20,583 INFO  [BaseTest] browser quit 
+2016-04-02 14:10:20,594 INFO  [BaseTest] file initialized 
+2016-04-02 14:10:22,409 INFO  [BaseTest] url initialized 
+2016-04-02 14:10:34,825 INFO  [SmokeTest] test1 started 
+2016-04-02 14:10:35,426 INFO  [Utility] bluefly is not present title 
+2016-04-02 14:10:35,719 INFO  [HomePage] link count 807 
+2016-04-02 14:10:49,472 INFO  [BaseTest] com.bit.test.SmokeTest 
+2016-04-02 14:10:49,553 INFO  [BaseTest] browser quit 
+2016-04-02 14:10:49,559 INFO  [BaseTest] file initialized 
+2016-04-02 14:10:51,283 INFO  [BaseTest] url initialized 
